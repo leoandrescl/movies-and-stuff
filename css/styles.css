@@ -1,0 +1,498 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*nav, titles, logo*/
+
+.wrapper {
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+#top-header {
+	padding: 1.5em 0;
+}
+
+#top-header .logo {
+		float: left;
+		text-transform: uppercase;
+		font-size: 1.15em;
+		font-weight: 700;
+}
+
+#top-header .logo span {
+			font-weight: 300;
+			color: #73e298;
+}
+
+#main-nav {
+	float: right;
+	font-size: .9em;
+	padding-top: 1em;
+}
+
+#main-nav a {
+	color: #8b8b9f;
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+.menu {
+	display: none;
+}
+
+/*banner*/
+
+#banner {
+	background: url(../imgs/banner-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	padding: 6.5em 0;
+}
+
+#banner-content-wrapper {
+	width: 900px;
+	max-width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#banner-content-wrapper #poster {
+	width: 275px;
+	position: relative;
+	float: left;
+}
+
+#poster .featured-image {
+	width: 100%;
+	max-width: 100%;
+	border-radius: .5em;
+	-webkit-webkit-box-shadow: 0px 0px 76px 0px rgba(0,0,0,0.47);
+	-moz-webkit-box-shadow: 0px 0px 76px 0px rgba(0,0,0,0.47);
+	box-shadow: 0px 0px 76px 0px rgba(0,0,0,0.47);
+}
+
+#poster .play-button {
+	position: absolute;
+	width: 80px;
+	left: 50%;
+	top: 50%;
+	margin: -40px 0 0 -40px;
+}
+
+#content {
+	float: left;
+	width: 500px;
+	margin-left: 100px;
+}
+
+.title {
+	display: inline;
+	font-size: 1.75em;
+	color: white;
+}
+
+.ratings {
+	display: inline;
+	margin-left: 1em;
+}
+
+i {
+	color: #73e298;
+	font-size: 1.35em;
+	margin: 0 0.15em;
+}
+
+.inactive {
+	color: #48494d;
+}
+
+.description {
+	color: #bbbebf;
+	font-size: 1em;
+	line-height: 2;
+}
+
+.info {
+	color: white;
+	font-size: 0.8em;
+	font-weight: 700;
+	margin-top: 3em;
+}
+
+.info span {
+	margin: 0.5em;
+}
+
+/*tv series-movies list content*/
+
+#top-shows, #top-movies {
+	padding: 5em 0;
+}
+
+#top-shows header, #top-movies header {
+	padding: 0 0 1.5em 0;
+}
+
+#top-shows header h2, #top-movies header h2{
+	font-size: 1.75em;
+	display: inline;
+}
+
+#top-shows .view-more, #top-movies .view-more {
+	float: right;
+	font-size: .8em;
+	margin: .75em 3.5% 0 0;
+	display: inline;
+}
+
+#top-shows {
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.row {
+	width: 100%;
+}
+
+.row .post {
+	width: 14%;
+	float: left;
+	margin-right: 2.5%
+}
+
+.row .post img {
+	width: 100%;
+	max-width: 100%;
+	border-radius: 0.5em;
+}
+
+.row .title {
+	font-size: 1.25em;
+	margin: 1em 0 0 0;
+	color: #252529;
+}
+
+.row .post-info {
+	font-size: .75em;
+	color: #8b8b9f;
+	margin: 0.5em 0;
+}
+
+#newsletter {
+	padding: 5em 0;
+	text-align: center;
+	background: #2a2a2e;
+}
+
+#newsletter .newletter-inner {
+	width: 600px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+#newsletter h2 {
+	font-size: 1.75em;
+	color: white;
+}
+
+#newsletter .sign-up-form {
+	margin-top: 3em;
+}
+
+#newsletter input[type="text"], input[type="email"]  {
+	width: 48%;
+	margin: 0 .5%;
+	height: 3.25em;
+	border: none;
+	outline: none;
+	border-radius: .3em;
+	background: #404043;
+	padding: .5em 1.25em;
+	font-size: .8em;
+	color: white;
+}
+
+#newsletter .button {
+	border: none;
+	outline: none;
+	padding: 1em 4.5em;
+	border-radius: 2em;
+	background: #73e298;
+	color: white;
+	font-weight: 700;
+	font-size: .9em;
+	margin-top: 3em;
+}
+
+#main-footer {
+	padding: 2.5em 0;
+	text-align: center;
+}
+
+#main-footer .logo {
+	text-transform: uppercase;
+	font-size: 1.15em;
+	font-weight: 700;
+}
+
+#main-footer .logo span {
+	font-weight: 300;
+	color: #73e298;
+}
+
+.copyright {
+	color: #8b8b9f;
+	font-size: .75em;
+	margin: 0;
+}
+
+.links {
+	display: inline;
+}
+
+.links a {
+	color: #8b8b9f;
+	font-size: .75em;
+	text-decoration: none;
+	margin: 0 .5em;
+}
+
+a:hover {
+	color: #73e298;
+}
+/*******************/
+/*responsive tablet*/
+/*******************/
+@media (max-width: 768px) {
+	#main-nav {
+		display:  none;
+	}
+	#main-nav.active {
+		display: block;
+		width: 100%;
+	}
+	#main-nav a {
+		display: block;
+		padding: 1em 0;
+		border-bottom: 1px solid #e9e9e9;
+	}
+	#main-nav a:last-child {
+		border-bottom: none; 
+	}
+	.menu {
+		display: block;
+		float: right;
+	}
+	.menu i {
+		font-size: 1.5em;
+		color: #242429;
+		padding-top: .6em;
+	}
+	/*banner*/
+	#banner {
+		padding: 3.5em 0;
+	}
+	/*poster*/
+	#banner-content-wrapper #poster {
+		width: 250px;
+	}
+	/*play button*/
+	#poster .play-button {
+		width: 60px;
+		margin: -30px 0 0 -30px;
+	}
+	/*content*/
+	#content {
+		margin-left: 50px;
+	}
+	.title {
+		font-size: 1.5em;
+	}
+	.ratings {
+		margin-left: 1em;
+	}
+	i {
+		font-size: 1em;
+	}
+	.description {
+		font-size: .9em;
+	}
+	.info {
+		color: white;
+		font-size: 0.7em;
+		font-weight: 700;
+		margin-top: 2em;
+	}
+	/*info span | | |*/
+	.info span {
+		margin: 0.5em;
+	}
+	/*end banner*/
+	/***************************/
+	/*tv-series and movies list*/
+	#top-shows, #top-movies {
+	padding: 3em 0;
+	}
+	/*headers*/
+	#top-shows header, #top-movies header {
+		padding: 0 0 1.5em 1.25%;
+	}
+	/*h2*/
+	#top-shows header h2, #top-movies header h2{
+		font-size: 1.5em;
+		display: inline;
+	}
+	/*.view-more*/
+	#top-shows .view-more, #top-movies .view-more {
+		margin: .75em 2.5% 0 0;
+	}
+	/*topshows*/
+	#top-shows {
+		border-bottom: 1px solid #d4d4d4;
+	}
+	/*rows*/
+	.row {
+
+	}
+	.row .post {
+		width: 30.6%;
+		margin: 0 1.25% 2em 1.25%;
+	}
+	/*titles*/
+	.row .title {
+		font-size: 1em;
+		margin: .5em 0 0 0;
+	}
+	/*info*/
+	.row .post-info {
+		font-size: 0.65em;
+	}
+	/**/
+}
+
+/*******************/
+/*responsive mobile*/
+/*******************/
+@media (max-width: 575px) {
+	#banner #banner-content-wrapper {
+		display: block;
+	}
+	#banner #poster {
+		width:  250px;
+		float: none;
+		display: block;
+		margin:  0 auto;
+	}
+	#banner #content {
+		width:  100%;
+		margin:  1em auto 0 auto;
+	}
+	#top-movies header, #top-shows header{
+		margin-bottom: 2em;
+	}
+	
+	/*rows*/
+	.row {
+
+	}
+	.row .post {
+		width: 250px;
+		margin: 0 auto 2em auto;
+		float: none;
+	}
+	
+	/*newsletter*/
+	#newsletter {
+		padding: 3em 0;
+	}
+	#newsletter h2 {
+		font-size: 1.35em;
+	}
+	.sign-up-form {
+		margin-top: 2em;
+		width: 90%;
+		margin: 0 0 1em auto;
+	}
+	#newsletter .sign-up-form input {
+		width: 90%;
+		margin: 0 0 1em auto;
+	}
+	#newsletter button {
+		margin-top: 2em;
+	}
+}
+
+/**/
+#main-nav a:hover {
+	color: rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
